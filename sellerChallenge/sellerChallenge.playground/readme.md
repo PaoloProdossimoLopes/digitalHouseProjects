@@ -8,3 +8,7 @@ Cada terno custa 400 reais,caso o cliente compre 3 ou mais ternos, ele recebe 50
 Cada vestido custa 900 reais,caso o cliente compre 5 vestidos ele ganha um véu de noiva (que custa 250 reais de brinde.
 Cada boné custa 50 reais, e para cada 2 bonés vendidos, o terceiro é grátis, logo não haverá lucro.
 Encapsule todos os métodos necessários.
+
+## What did I use?
+
+![Swift](https://github.com/PaoloProdossimoLopes/digitalHouseProjects/blob/master/sellerChallenge/images/swiftLogo.jpeg)
