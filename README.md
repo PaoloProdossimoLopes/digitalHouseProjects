@@ -10,5 +10,5 @@ basically this course is about IOS development.
 - Swift
 
 # Who are my teachers?
-- [Narlei Moreira](_https://github.com/narlei)
-- [Jessica Santana](_https://github.com/jeafsantana)
+- [Narlei Moreira](https://github.com/narlei)
+- [Jessica Santana](https://github.com/jeafsantana)
