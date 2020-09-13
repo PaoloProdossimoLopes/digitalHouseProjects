@@ -6,6 +6,9 @@ In this repository I'll post all my projects that I make in the course of Digita
 # What this course teaching me?
 basically this course is about IOS development.
 
+# Which languages used?
+- Swift
+
 # Who are my teachers?
 - [Narlei Moreira](https://github.com/narlei)
 - [Jessica Santana](https://github.com/jeafsantana)
