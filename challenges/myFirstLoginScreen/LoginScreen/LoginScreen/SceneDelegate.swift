@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Login screen
+//  LoginScreen
 //
-//  Created by Paolo Prodossimo Lopes on 14/09/20.
+//  Created by Paolo Prodossimo Lopes on 15/09/20.
 //  Copyright © 2020 Paolo Prodossimo Lopes. All rights reserved.
 //
 

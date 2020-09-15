@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu email aqui..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1SX-Lr-yON">
+                                <rect key="frame" x="70" y="431" width="288" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="JXD-lU-XXt"/>
+                                    <constraint firstAttribute="height" constant="34" id="uGZ-Gx-Em0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira sua senha aqui...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul6-Ne-fwN">
+                                <rect key="frame" x="70" y="491" width="288" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="I1n-jR-9Us"/>
+                                    <constraint firstAttribute="height" constant="34" id="mAm-FP-UZX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD8-B5-gFt">
+                                <rect key="frame" x="150.5" y="566" width="113" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EzH-hx-yje"/>
+                                    <constraint firstAttribute="width" constant="113" id="ZJl-Og-DDY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ul6-Ne-fwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7" id="DEh-Hy-Qdj"/>
+                            <constraint firstItem="1SX-Lr-yON" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uff-rN-ydw"/>
+                            <constraint firstItem="SD8-B5-gFt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="138" id="ZKu-uI-d2M"/>
+                            <constraint firstItem="SD8-B5-gFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kjg-y0-5ol"/>
+                            <constraint firstItem="Ul6-Ne-fwN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="ld1-1I-2cV"/>
+                            <constraint firstItem="1SX-Lr-yON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7" id="xsF-St-gmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="1SX-Lr-yON" id="lGE-9x-247"/>
+                        <outlet property="textFieldPassword" destination="Ul6-Ne-fwN" id="WYk-TP-oN6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>

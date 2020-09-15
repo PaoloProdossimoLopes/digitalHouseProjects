@@ -1,15 +1,15 @@
 //
-//  Login_screenTests.swift
-//  Login screenTests
+//  LoginScreenTests.swift
+//  LoginScreenTests
 //
-//  Created by Paolo Prodossimo Lopes on 14/09/20.
+//  Created by Paolo Prodossimo Lopes on 15/09/20.
 //  Copyright © 2020 Paolo Prodossimo Lopes. All rights reserved.
 //
 
 import XCTest
-@testable import Login_screen
+@testable import LoginScreen
 
-class Login_screenTests: XCTestCase {
+class LoginScreenTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
