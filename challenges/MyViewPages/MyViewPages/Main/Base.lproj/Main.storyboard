@@ -15,10 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-CY-ymU">
-                                <rect key="frame" x="34" y="395" width="346" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-CY-ymU">
+                                <rect key="frame" x="184" y="395" width="46" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DmH-Rd-xTJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="rG1-Bo-YHl"/>
+                                </constraints>
                                 <state key="normal" title="Page 1">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -26,9 +29,8 @@
                                     <action selector="actionButtonPageView1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H30-Lj-h82"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-EY-bIl">
-                                <rect key="frame" x="34" y="433" width="346" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-EY-bIl">
+                                <rect key="frame" x="183" y="433" width="48" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Page 2">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,10 +39,13 @@
                                     <action selector="actionButtonPageView2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VpJ-u3-wpZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-ED-KtN">
-                                <rect key="frame" x="34" y="471" width="346" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-ED-KtN">
+                                <rect key="frame" x="185" y="471" width="44" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="odh-gH-aMA"/>
+                                    <constraint firstAttribute="width" constant="44" id="ves-xI-NlD"/>
+                                </constraints>
                                 <state key="normal" title="Page3">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -48,8 +53,41 @@
                                     <action selector="actionButtonPage3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hz1-wO-lPl"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-DH.png" translatesAutoresizingMaskIntoConstraints="NO" id="Txk-TV-Rik">
+                                <rect key="frame" x="34" y="224" width="346" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="346" id="4xB-qS-qSH"/>
+                                    <constraint firstAttribute="width" constant="346" id="7dH-m6-2cw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="Phx-VN-5LW"/>
+                                    <constraint firstAttribute="height" constant="128" id="k9o-9g-6FR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ryf-ED-KtN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="38" id="2Am-lQ-eb6"/>
+                            <constraint firstItem="7uh-CY-ymU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="2PT-cK-QK0"/>
+                            <constraint firstItem="xAY-EY-bIl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4CF-sv-IE4"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4ys-YJ-WrC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ryf-ED-KtN" secondAttribute="trailing" constant="185" id="7S0-3X-GtM"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-160" id="7X3-zy-NAQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ryf-ED-KtN" secondAttribute="bottom" constant="361" id="HiY-Bk-abp"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIn-Ok-0RN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Txk-TV-Rik" secondAttribute="trailing" constant="34" id="a7C-ey-vQr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uh-CY-ymU" secondAttribute="trailing" constant="184" id="b7N-yt-AJC"/>
+                            <constraint firstItem="7uh-CY-ymU" firstAttribute="top" secondItem="Txk-TV-Rik" secondAttribute="bottom" constant="43" id="bSy-UV-RFm"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVY-EF-yTf"/>
+                            <constraint firstItem="7uh-CY-ymU" firstAttribute="top" secondItem="Txk-TV-Rik" secondAttribute="bottom" constant="43" id="gVq-hk-e72"/>
+                            <constraint firstItem="ryf-ED-KtN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="lB2-nY-s6d"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="nv0-AM-SfW"/>
+                            <constraint firstItem="7uh-CY-ymU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxA-sW-4jm"/>
+                            <constraint firstItem="xAY-EY-bIl" firstAttribute="top" secondItem="7uh-CY-ymU" secondAttribute="bottom" constant="8" id="oYx-Rn-Z0j"/>
+                            <constraint firstItem="ryf-ED-KtN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="raF-Oz-YIU"/>
+                            <constraint firstItem="Txk-TV-Rik" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="swD-Mq-rzP"/>
+                            <constraint firstItem="ryf-ED-KtN" firstAttribute="top" secondItem="xAY-EY-bIl" secondAttribute="bottom" constant="8" id="vJY-0c-DPQ"/>
+                            <constraint firstItem="xAY-EY-bIl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wMu-2a-Ruj"/>
+                            <constraint firstItem="7uh-CY-ymU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-38" id="wlq-vC-uDx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="d9p-Vy-r3e"/>
@@ -77,4 +115,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo-DH.png" width="291.1199951171875" height="87.360000610351562"/>
+    </resources>
 </document>

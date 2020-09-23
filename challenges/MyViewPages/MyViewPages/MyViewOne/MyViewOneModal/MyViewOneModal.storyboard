@@ -22,6 +22,7 @@
                                 <state key="normal" title="Close Modal Page"/>
                                 <connections>
                                     <action selector="closeModalPage:" destination="MgI-oR-ndf" eventType="touchUpInside" id="l5b-cY-TLF"/>
+                                    <action selector="closeModalPage:" destination="JC2-IW-lY0" eventType="touchUpInside" id="vwO-dS-4yl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modal page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1W-Bn-12U">

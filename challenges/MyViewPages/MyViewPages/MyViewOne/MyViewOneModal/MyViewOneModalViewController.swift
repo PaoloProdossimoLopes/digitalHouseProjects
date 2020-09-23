@@ -11,8 +11,8 @@ import UIKit
 class MyViewOneModalViewController: UIViewController {
 
     @IBAction func closeModalPage(_ sender: Any) {
-        if let closeViewModalPage = UIStoryboard(name: "MyViewOne", bundle: nil).instantiateInitialViewController() as? MyViewOneModalViewController{
-            present(closeViewModalPage, animated: true, completion: nil )
+        if let closeViewModalPage = UIStoryboard(name: "MyViewOneModal", bundle: nil).instantiateInitialViewController() as? MyViewOneModalViewController{
+            dismiss(animated: true, completion: nil)
         }
     }
     

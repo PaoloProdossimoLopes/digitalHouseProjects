@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52220896251B9E9D00190E85 /* logo-DH.png in Resources */ = {isa = PBXBuildFile; fileRef = 52220895251B9E9D00190E85 /* logo-DH.png */; };
 		5256E8D9251A518000130ACB /* MyViewOneViewControlerOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256E8D8251A518000130ACB /* MyViewOneViewControlerOpenViewController.swift */; };
 		5256E8DB251A518A00130ACB /* MyViewOneViewControlerOpen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5256E8DA251A518A00130ACB /* MyViewOneViewControlerOpen.storyboard */; };
 		5256E8DE251A52C800130ACB /* MyViewTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256E8DD251A52C800130ACB /* MyViewTwoViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52220895251B9E9D00190E85 /* logo-DH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-DH.png"; path = "IMAGES/logo-DH.png"; sourceTree = SOURCE_ROOT; };
 		5256E8D8251A518000130ACB /* MyViewOneViewControlerOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewOneViewControlerOpenViewController.swift; sourceTree = "<group>"; };
 		5256E8DA251A518A00130ACB /* MyViewOneViewControlerOpen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewOneViewControlerOpen.storyboard; sourceTree = "<group>"; };
 		5256E8DD251A52C800130ACB /* MyViewTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewTwoViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		52E2B9E52518E9420060B6B4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				52220895251B9E9D00190E85 /* logo-DH.png */,
 				52E2B9B92518E8980060B6B4 /* ViewController.swift */,
 				52E2B9BB2518E8980060B6B4 /* Main.storyboard */,
 			);
@@ -370,6 +373,7 @@
 				5256E8EA251A55F100130ACB /* NavigationTwo.storyboard in Resources */,
 				5256E8DB251A518A00130ACB /* MyViewOneViewControlerOpen.storyboard in Resources */,
 				5256E8E5251A54E300130ACB /* ModalTwo.storyboard in Resources */,
+				52220896251B9E9D00190E85 /* logo-DH.png in Resources */,
 				5256E8E0251A52D600130ACB /* MyViewTwo.storyboard in Resources */,
 				52E2B9F42518FC730060B6B4 /* MyViewOneModal.storyboard in Resources */,
 				52E2B9C22518E89A0060B6B4 /* LaunchScreen.storyboard in Resources */,
