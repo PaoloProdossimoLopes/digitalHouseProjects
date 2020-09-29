@@ -63,6 +63,8 @@ extension ViewController: UITableViewDataSource{
         
         cell.setup(developer: arrayDevelopers[indexPath.row])
         
+        cell.accessoryType = .detailDisclosureButton//add info icon
+        
         return cell
     }
     

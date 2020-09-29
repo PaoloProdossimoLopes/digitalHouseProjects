@@ -17,6 +17,7 @@
 		52BE2D97252234FD00B1FBD5 /* TableViewExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2D96252234FD00B1FBD5 /* TableViewExerciseUITests.swift */; };
 		52BE2DA5252235DF00B1FBD5 /* DeveloperCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2DA4252235DF00B1FBD5 /* DeveloperCellTableViewCell.swift */; };
 		52BE2DA7252235F400B1FBD5 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BE2DA6252235F400B1FBD5 /* Developer.swift */; };
+		52BE2DA92522AF0200B1FBD5 /* capa1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BE2DA82522AF0100B1FBD5 /* capa1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		52BE2D98252234FD00B1FBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52BE2DA4252235DF00B1FBD5 /* DeveloperCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCellTableViewCell.swift; sourceTree = "<group>"; };
 		52BE2DA6252235F400B1FBD5 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		52BE2DA82522AF0100B1FBD5 /* capa1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = capa1.png; path = Images/capa1.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,10 @@
 		52BE2D73252234FB00B1FBD5 /* TableViewExercise */ = {
 			isa = PBXGroup;
 			children = (
-				52BE2D74252234FC00B1FBD5 /* AppDelegate.swift */,
 				52BE2D76252234FC00B1FBD5 /* SceneDelegate.swift */,
+				52BE2D74252234FC00B1FBD5 /* AppDelegate.swift */,
 				52BE2D78252234FC00B1FBD5 /* ViewController.swift */,
+				52BE2DA82522AF0100B1FBD5 /* capa1.png */,
 				52BE2DA6252235F400B1FBD5 /* Developer.swift */,
 				52BE2DA4252235DF00B1FBD5 /* DeveloperCellTableViewCell.swift */,
 				52BE2D7A252234FC00B1FBD5 /* Main.storyboard */,
@@ -240,6 +243,7 @@
 			files = (
 				52BE2D81252234FD00B1FBD5 /* LaunchScreen.storyboard in Resources */,
 				52BE2D7E252234FD00B1FBD5 /* Assets.xcassets in Resources */,
+				52BE2DA92522AF0200B1FBD5 /* capa1.png in Resources */,
 				52BE2D7C252234FC00B1FBD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
