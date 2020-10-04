@@ -17,7 +17,7 @@ class CarPagesViewController: UIViewController {
     @IBOutlet weak var labelTextNameCar: UILabel!
     
     
-    var cars = avoid
+    var cars =
 
     
     override func viewDidLoad() {
