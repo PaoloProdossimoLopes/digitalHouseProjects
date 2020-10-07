@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nae-IJ-sKU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavigationViewController-->
+        <scene sceneID="zTo-Ch-XO0">
+            <objects>
+                <viewController title="NavigationViewController" id="nae-IJ-sKU" customClass="NavigationViewController" customModule="DesafioSegmentedControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQy-bN-v18">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-9c-Tsy">
+                                <rect key="frame" x="20" y="109" width="374" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="5jz-Ax-PaJ"/>
+                                    <constraint firstAttribute="height" constant="208" id="ILh-eX-E8y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mxS-9c-Tsy" firstAttribute="leading" secondItem="arp-MC-6tJ" secondAttribute="leading" constant="20" id="3Wg-8e-F6S"/>
+                            <constraint firstItem="mxS-9c-Tsy" firstAttribute="top" secondItem="arp-MC-6tJ" secondAttribute="top" constant="65" id="6hW-IB-ErE"/>
+                            <constraint firstItem="arp-MC-6tJ" firstAttribute="bottom" secondItem="mxS-9c-Tsy" secondAttribute="bottom" constant="545" id="BvW-eh-2gQ"/>
+                            <constraint firstItem="arp-MC-6tJ" firstAttribute="trailing" secondItem="mxS-9c-Tsy" secondAttribute="trailing" constant="20" id="Ztj-8B-fk9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="arp-MC-6tJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewNavigation" destination="mxS-9c-Tsy" id="JRY-Q0-kta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFx-Sk-0HW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+</document>
