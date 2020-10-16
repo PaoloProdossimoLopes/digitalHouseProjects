@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-bE-EVD">
+                                <rect key="frame" x="93" y="83" width="228" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-Ru-MS6">
+                                <rect key="frame" x="20" y="207" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="GZM-U7-ExR"/>
+                                    <constraint firstAttribute="height" constant="128" id="Uiy-S1-7rF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctU-oj-SeS">
+                                <rect key="frame" x="20" y="360" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5Os-J4-0cw"/>
+                                    <constraint firstAttribute="width" constant="374" id="tg8-e7-FUs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA2-Zd-dCL">
+                                <rect key="frame" x="20" y="517" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7Io-Jc-J1o"/>
+                                    <constraint firstAttribute="width" constant="374" id="lgA-pC-eOj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RA2-Zd-dCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AHc-ur-Iv3"/>
+                            <constraint firstItem="ec7-Ru-MS6" firstAttribute="top" secondItem="BQK-bE-EVD" secondAttribute="bottom" constant="88" id="ATx-tO-nLZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RA2-Zd-dCL" secondAttribute="bottom" constant="217" id="BQc-n5-ry9"/>
+                            <constraint firstItem="ctU-oj-SeS" firstAttribute="top" secondItem="ec7-Ru-MS6" secondAttribute="bottom" constant="25" id="JFc-pD-Lf6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctU-oj-SeS" secondAttribute="trailing" constant="20" id="QDM-gn-ur0"/>
+                            <constraint firstItem="RA2-Zd-dCL" firstAttribute="top" secondItem="ctU-oj-SeS" secondAttribute="bottom" constant="29" id="Ue3-wf-dqT"/>
+                            <constraint firstItem="ec7-Ru-MS6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d8N-Sj-dl1"/>
+                            <constraint firstItem="BQK-bE-EVD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="dWf-Qj-KRF"/>
+                            <constraint firstItem="ctU-oj-SeS" firstAttribute="top" secondItem="ec7-Ru-MS6" secondAttribute="bottom" constant="25" id="etn-Qd-OzZ"/>
+                            <constraint firstItem="ctU-oj-SeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mGb-3Z-o0G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ec7-Ru-MS6" secondAttribute="trailing" constant="20" id="o5X-8o-1hz"/>
+                            <constraint firstItem="RA2-Zd-dCL" firstAttribute="top" secondItem="ctU-oj-SeS" secondAttribute="bottom" constant="29" id="oni-Iq-Ojn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BQK-bE-EVD" secondAttribute="bottom" constant="743" id="sfW-29-GwK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RA2-Zd-dCL" secondAttribute="trailing" constant="20" id="ssX-wq-n0r"/>
+                            <constraint firstItem="BQK-bE-EVD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="yoh-9W-3bz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BQK-bE-EVD" secondAttribute="trailing" constant="93" id="zge-ND-ete"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="BQK-bE-EVD" id="ZBP-Rt-AMU"/>
+                        <outlet property="viewOne" destination="ec7-Ru-MS6" id="OqH-5h-58z"/>
+                        <outlet property="viewThree" destination="RA2-Zd-dCL" id="dwv-bT-qad"/>
+                        <outlet property="viewTwo" destination="ctU-oj-SeS" id="Vab-TB-FMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+</document>
