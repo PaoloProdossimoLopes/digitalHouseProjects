@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7t-fP-NDy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ifg-nC-gUx">
+            <objects>
+                <viewController id="H7t-fP-NDy" customClass="ViewController" customModule="SearchBar_PickerView_TableView_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y9H-3X-GIy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JHL-ZG-p9A">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axf-Xi-fd6">
+                                <rect key="frame" x="0.0" y="100" width="414" height="216"/>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CpQ-Mt-b2w">
+                                <rect key="frame" x="0.0" y="316" width="414" height="546"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="TTC-0R-T91">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TTC-0R-T91" id="Qzi-q0-fz4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City / State / Contry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acX-dH-j2g">
+                                                    <rect key="frame" x="20" y="11" width="374" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="acX-dH-j2g" firstAttribute="leading" secondItem="Qzi-q0-fz4" secondAttribute="leadingMargin" id="AYK-Zb-Kzf"/>
+                                                <constraint firstItem="acX-dH-j2g" firstAttribute="bottom" secondItem="Qzi-q0-fz4" secondAttribute="bottomMargin" id="bAU-Dh-hIr"/>
+                                                <constraint firstItem="acX-dH-j2g" firstAttribute="top" secondItem="Qzi-q0-fz4" secondAttribute="topMargin" id="hdx-kB-VzY"/>
+                                                <constraint firstItem="acX-dH-j2g" firstAttribute="trailing" secondItem="Qzi-q0-fz4" secondAttribute="trailingMargin" id="ldu-8n-99D"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OYd-Ug-ESc" firstAttribute="bottom" secondItem="CpQ-Mt-b2w" secondAttribute="bottom" id="3Xz-O0-lo2"/>
+                            <constraint firstItem="CpQ-Mt-b2w" firstAttribute="top" secondItem="axf-Xi-fd6" secondAttribute="bottom" id="9x5-WJ-0er"/>
+                            <constraint firstItem="JHL-ZG-p9A" firstAttribute="trailing" secondItem="OYd-Ug-ESc" secondAttribute="trailing" id="DlH-mV-Bf6"/>
+                            <constraint firstItem="axf-Xi-fd6" firstAttribute="leading" secondItem="OYd-Ug-ESc" secondAttribute="leading" id="eCM-Ti-YLf"/>
+                            <constraint firstItem="JHL-ZG-p9A" firstAttribute="leading" secondItem="OYd-Ug-ESc" secondAttribute="leading" id="eKy-HO-uct"/>
+                            <constraint firstItem="axf-Xi-fd6" firstAttribute="top" secondItem="JHL-ZG-p9A" secondAttribute="bottom" id="hjR-hn-Qaq"/>
+                            <constraint firstItem="axf-Xi-fd6" firstAttribute="trailing" secondItem="OYd-Ug-ESc" secondAttribute="trailing" id="iXV-0o-fKK"/>
+                            <constraint firstItem="CpQ-Mt-b2w" firstAttribute="leading" secondItem="OYd-Ug-ESc" secondAttribute="leading" id="pHq-Yr-EDo"/>
+                            <constraint firstItem="OYd-Ug-ESc" firstAttribute="trailing" secondItem="CpQ-Mt-b2w" secondAttribute="trailing" id="peQ-h4-PsT"/>
+                            <constraint firstItem="JHL-ZG-p9A" firstAttribute="top" secondItem="OYd-Ug-ESc" secondAttribute="top" id="u6n-QV-o02"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OYd-Ug-ESc"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelTextData" destination="acX-dH-j2g" id="xTi-mB-WVU"/>
+                        <outlet property="pickerViewFilter" destination="axf-Xi-fd6" id="3fZ-Tb-9gW"/>
+                        <outlet property="searchBarFilter" destination="JHL-ZG-p9A" id="g6G-qH-x2Y"/>
+                        <outlet property="tableViewData" destination="CpQ-Mt-b2w" id="398-gg-NQE"/>
+                        <outlet property="tableViewDataCell" destination="TTC-0R-T91" id="ruq-hr-9vb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kE-eH-wEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+</document>
