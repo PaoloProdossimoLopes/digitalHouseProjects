@@ -20,42 +20,58 @@ import UIKit
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK:VARs
     var positionYInitial = 20
     var positionYCurrent = 20
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //call function
         createView()
     }
 
     @objc func createView() {
+        
         let newView = UIView(frame: CGRect(x: (Int(self.view.frame.size.width / 2) - 25 ), y: positionYCurrent, width: 50, height: 50))
+        
         newView.backgroundColor = .random
+        
         view.addSubview(newView)
+        
         positionYCurrent += 50
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(createView))
         newView.addGestureRecognizer(tap)
+        
         animateAndRemoveSubviews()
     }
     
     func animateAndRemoveSubviews() {
         if(Float(positionYCurrent) > Float(self.view.frame.size.height)) {
+            
             let animatedView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            
             animatedView.backgroundColor = .white
+            
             view.addSubview(animatedView)
+            
             animatedView.center = view.center
+            
             
             UIView.animate(withDuration: 2, animations: {
                  animatedView.frame = self.view.frame
-            }, completion: { (true) in
-                self.positionYCurrent = self.positionYInitial
-                self.view.subviews.forEach{$0.removeFromSuperview()
-                    
-            }
-                self.createView()
-            }
-        )
+                }, completion: { (true) in
+                    self.positionYCurrent = self.positionYInitial
+                    self.view.subviews.forEach{$0.removeFromSuperview()
+                        
+                    }
+                    self.createView()
+                }
+            )
+        }
     }
-}
     
 }
 
