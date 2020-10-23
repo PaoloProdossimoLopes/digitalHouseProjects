@@ -9,6 +9,7 @@
 import Foundation
 
 class Filme{
+    
     var img:String
     var nome:String
     var descricao:String

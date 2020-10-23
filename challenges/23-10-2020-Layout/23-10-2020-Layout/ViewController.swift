@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //tableview
+    //MARK:Tableview
     @IBOutlet weak var tableViewMain: UITableView!
     
     
-    //buttons
+    //MARK:Buttons
     @IBOutlet weak var buttonConfirmar: UIButton!
     @IBOutlet weak var buttonExcluir: UIButton!
     
+    //MARK:Array
      var arrayFilmes = [Filme]()
     
     override func viewDidLoad() {
@@ -31,8 +32,10 @@ class ViewController: UIViewController {
         arrayFilmes.append(Filme(img: "Masterchef.jpg", nome: "Filme4", descricao: "xt of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall", estrelas: 2, avaliacoes: 300))
         arrayFilmes.append(Filme(img: "Masterchef.jpg", nome: "Filme5r", descricao: "xt of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gall", estrelas: 2, avaliacoes: 300))
         
+        //MARK:Radius
         buttonConfirmar.layer.cornerRadius = 25
         buttonExcluir.layer.cornerRadius = 25
+        
         
         tableViewMain.delegate = self
         tableViewMain.dataSource = self
@@ -52,6 +55,7 @@ extension ViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FilmesTableViewCell", for: indexPath) as! FilmesTableViewCell
+        
         cell.setup(filme: arrayFilmes[indexPath.row])
         
         return cell

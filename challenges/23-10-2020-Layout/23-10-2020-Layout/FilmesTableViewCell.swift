@@ -9,7 +9,8 @@
 import UIKit
 
 class FilmesTableViewCell: UITableViewCell {
-
+    
+    //MARK:Outlets
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var labelTextNomeFilme: UILabel!
     @IBOutlet weak var imgEstrelas: UIImageView!
@@ -28,7 +29,7 @@ class FilmesTableViewCell: UITableViewCell {
         
     }
     
-    
+    //MARK:Setup
     func setup (filme:Filme){
         labelTextNomeFilme.text = filme.nome
         labelTextAvaliacoes.text = "(\(filme.avaliacoes) avaliações)"
